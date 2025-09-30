@@ -71,7 +71,7 @@ colorscheme elflord
 set background=dark
 
 "=====[ Put all Vim's undo/backup/temp files in one location ]================
-" Note this is here: C:\Users\elink\vimtemp
+" Note these folders need to be created/set manually TODO: Fix this
 if has('persistent_undo')
     set undodir=~/vimtemp/undo,.
     set undolevels=5000
