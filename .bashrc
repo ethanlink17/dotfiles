@@ -52,7 +52,7 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-# Function specifically for working with multi-repo workspaces (Like GM HWIO)
+# Function specifically for working with multi-repo workspaces
 # Usage: "loop git switch main"
 # Alternate: Run command from base (DepArch) dir: 
 # for dir in *; do (cd "$dir" && echo "$dir" && git switch main); done
@@ -65,7 +65,7 @@ loop(){
      done 
 }
 
-# Function specifically for working with multi-repo workspaces (GM HWIO Specific)
+# Function specifically for working with multi-repo workspaces
 # Prints the branch name for every repo inside a directory
 print_branch(){
      for dir in *
@@ -76,7 +76,7 @@ print_branch(){
      done
 }
 
-# Function specifically for working with multi-repo workspaces (GM HWIO Specific)
+# Function specifically for working with multi-repo workspaces
 # 'prune' alias does not work with loop() function above
 # This function is to handle pruning all remote repos 
 prune_remote(){
