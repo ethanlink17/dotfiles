@@ -54,7 +54,7 @@ parse_git_branch() {
 
 # Function specifically for working with multi-repo workspaces
 # Usage: "loop git switch main"
-# Alternate: Run command from base (DepArch) dir: 
+# Alternate: Run command from base dir: 
 # for dir in *; do (cd "$dir" && echo "$dir" && git switch main); done
 loop(){
      for dir in *
